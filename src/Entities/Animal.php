@@ -3,12 +3,12 @@
 
 
 
-class Animal
+abstract class Animal
 {
 
 // Propriété
 
-private float $age;
+protected float $age;
 
 
  // Méthode magique
@@ -18,12 +18,12 @@ private float $age;
 
  // Méthode custom
 
- public function setAge(float $age){
-  $this->age = $age;
-}
+//  public function setAge(float $age){
+//   $this->age = $age;
+// }
 
 
- public function info() : string
+ protected function info() : string
  {
 
    return "Je suis un animal de l'age de : {$this->age}";

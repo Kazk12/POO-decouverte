@@ -3,14 +3,14 @@
 
 
 
-class Chien  extends Mammifere {
+final class Chien  extends Mammifere {
 
     private $race;
 
 
     public function __construct(float $height, float $age, string $race){
-        $this->setHeight($height);
-        $this->setAge($age);
+        // $this->setHeight($height);
+        // $this->setAge($age);
         $this->race=$race;
 
     }
